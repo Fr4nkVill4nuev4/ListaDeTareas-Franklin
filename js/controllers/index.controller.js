@@ -9,7 +9,7 @@ const contador = document.getElementById("contador");
 btnAgregar.addEventListener("click", agregarTarea);
 
 function agregarTarea() {
-    // CORREGIDO: Se cambió 'txtTarea.Tarea.value' por 'txtTarea.value'
+  
     const nombreTarea = txtTarea.value.trim();
     const prioridadTarea = prioridad.value;
 
@@ -28,7 +28,7 @@ function agregarTarea() {
         prioridad: prioridadTarea,
     };
 
-    // CORREGIDO: Se cambió 'tarea.push' por 'tareas.push' para usar el arreglo global
+   
     tareas.push(nuevaTarea);
 
     mostrarTareas();
